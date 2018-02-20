@@ -26,6 +26,7 @@ body {
 .background {
   background-image: url(../../resources/images/glasses-bg.png);
   background-size: cover;
+  background-position: center;
   height: 30rem;
 }
 
@@ -51,10 +52,15 @@ nav {
 /*  SLOGAN  */
 
 .slogan {
-  background-color: white;
-  position: relative;
-  top: 10rem;
+  border: 2px solid blue; /* delete */
   float: right;
+  position: relative;
+  left: 2rem;
+}
+
+.slogan h1 {
+  background-color: white;
+  margin-top: 10rem;
   padding: 1.5rem 5rem;
   font-size: 2rem;
   line-height: 1.2;
