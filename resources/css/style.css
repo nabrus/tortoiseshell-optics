@@ -16,12 +16,24 @@ body {
   margin: 0 auto;
 }
 
+.logo {
+  border: 2px solid blue; /* delete */
+  display: flex;
+  align-items: center;
+
+}
+
+.logo img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
 
 
 
 
 
-/*  HEADER  */
+
+/*  HEADER AND SITE NAV  */
 
 .background {
   background-image: url(../../resources/images/glasses-bg.png);
@@ -34,20 +46,20 @@ body {
   border: 2px blue solid; /* delete */
   display: flex;
   justify-content: space-between;
+  background-color: cadetblue;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  color: white;
 
 }
 
-.logo {
-  border: 2px solid blue; /* delete */
-  display: flex;
-  align-items: center;
-
+nav span {
+  padding-left: 2rem;
 }
 
 
-nav {
-  border: 2px solid pink;
-}
+
+
 
 /*  SLOGAN  */
 
@@ -65,4 +77,46 @@ nav {
   font-size: 2rem;
   line-height: 1.2;
   font-weight: bold;
+}
+
+
+
+
+
+/*  BUSINESS SERVICES  */
+
+.services {
+  border: 2px solid limegreen; /* delete temp */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.icon-box {
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  border: 2px solid dodgerblue; /* delete temp */
+}
+.icon-paper img {
+  width: 3.5rem;
+}
+
+.icon img {
+  width: 5rem;
+}
+
+.icon-box span {
+  border: 2px solid blue; /* delete temp */
+  max-width: 5rem;
+  text-align: center;
+}
+
+.icon-box.paper span {
+  max-width: 7rem;
 }
