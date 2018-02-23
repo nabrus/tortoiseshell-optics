@@ -16,6 +16,13 @@ body {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 1024px) {
+  /* TABLET */
+  .container {
+    max-width: 100%;
+  }
+}
+
 .logo {
   border: 2px solid blue; /* delete */
   display: flex;
@@ -57,7 +64,22 @@ nav span {
   padding-left: 2rem;
 }
 
+@media only screen and (max-width: 1024px){
 
+  /* .background {
+    width: 100%;
+  } */
+
+  .company {
+    clear: both;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  nav span {
+    padding-right: 2rem;
+  }
+}
 
 
 
@@ -106,9 +128,6 @@ nav span {
   margin-left: 0;
 }
 
-img {
-  border: 2px solid dodgerblue; /* delete temp */
-}
 .icon-paper img {
   width: 3.5rem;
 }
