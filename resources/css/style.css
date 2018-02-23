@@ -89,15 +89,21 @@ nav span {
   border: 2px solid limegreen; /* delete temp */
   display: flex;
   justify-content: center;
-  align-items: center;
-
+  margin: 3rem 0;
+  clear: both; /* doesn't break when not selected-maybe delete */
 }
 
 .icon-box {
   height: 8rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  margin-left: 6rem;
+}
+
+.paper {
+  margin-left: 0;
 }
 
 img {
@@ -119,4 +125,47 @@ img {
 
 .icon-box.paper span {
   max-width: 7rem;
+}
+
+
+
+
+
+/*  BUSINESS INFO COLUMNS  */
+
+.column {
+  border: 2px solid hotpink;
+  width: 35%;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.column:nth-of-type(1) {
+  float: left;
+
+}
+
+.column:nth-of-type(2) {
+  float: right;
+  margin-right: 25%;
+}
+
+.column h3 {
+  background-color: cadetblue;
+  width: 10rem;
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+
+
+
+
+/*  FOOTER  */
+
+footer {
+  clear: both;
+  background-color: azure;
+  padding: 4rem;
 }
