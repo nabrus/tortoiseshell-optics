@@ -73,6 +73,7 @@ body {
   /* TABLET */
   .company {
     margin: 0;
+    position: static;
   }
 
   .background {
