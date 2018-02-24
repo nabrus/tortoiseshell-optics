@@ -10,16 +10,13 @@ body {
 }
 
 .container {
-  border: 2px red solid; /* delete */
   max-width: 960px;
   margin: 0 auto;
 }
 
 .logo {
-  border: 2px solid blue; /* delete */
   display: flex;
   align-items: center;
-
 }
 
 .logo img {
@@ -34,11 +31,18 @@ body {
   }
 }
 
+@media only screen and (max-width: 470px) {
+  /* PHONE */
+  .logo h4 {
+    display: none;
+  }
+}
 
 
 
 
-/*  HEADER AND SITE NAV  */
+
+/*  BACKGROUND, HEADER, AND SITE NAV  */
 
 .background {
   background-image: url(../../resources/images/glasses-bg.png);
@@ -48,17 +52,21 @@ body {
 }
 
 .company {
-  border: 2px blue solid; /* delete */
   display: flex;
   justify-content: space-between;
   background-color: cadetblue;
+  position: relative;
+  top: 1rem;
   padding: 1rem 2rem;
-  margin-top: 1rem;
   color: white;
 }
 
-nav span {
+.site-nav {
   padding-left: 2rem;
+}
+
+.site-nav__menu {
+  display: none;
 }
 
 @media only screen and (max-width: 1024px){
@@ -72,12 +80,27 @@ nav span {
   }
 }
 
+@media only screen and (max-width: 470px) {
+  /* PHONE */
+  .background {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .site-nav {
+    display: none;
+  }
+
+  .site-nav__menu {
+    display: block;
+  }
+}
+
 
 
 /*  SLOGAN  */
 
 .slogan {
-  border: 2px solid blue; /* delete */
   float: right;
   position: relative;
   left: 2rem;
@@ -105,6 +128,21 @@ nav span {
   }
 }
 
+@media only screen and (max-width: 470px) {
+  /* PHONE */
+  .slogan {
+    width: 100%;
+  }
+
+  .slogan h1 {
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1;
+    text-align: center;
+    margin: 9rem auto 0;
+  }
+}
+
 
 
 
@@ -112,11 +150,9 @@ nav span {
 /*  BUSINESS SERVICES  */
 
 .services {
-  border: 2px solid limegreen; /* delete temp */
   display: flex;
   justify-content: center;
   margin: 3rem 0;
-  clear: both; /* doesn't break when not selected-maybe delete */
 }
 
 .icon-box {
@@ -128,11 +164,11 @@ nav span {
   margin-left: 6rem;
 }
 
-.paper {
+.portrait {
   margin-left: 0;
 }
 
-.icon-paper img {
+.portrait>.icon img {
   width: 3.5rem;
 }
 
@@ -141,14 +177,44 @@ nav span {
 }
 
 .icon-box span {
-  border: 2px solid blue; /* delete temp */
   max-width: 5rem;
   text-align: center;
   line-height: 1.4;
 }
 
-.icon-box.paper span {
+.portrait span {
   max-width: 7rem;
+}
+
+@media only screen and (max-width: 470px) {
+  /* PHONE */
+  .services {
+    display: block;
+    margin: 0;
+    margin: 3.77rem 0;
+  }
+
+  .icon-box {
+    justify-content: flex-start;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .icon-box span {
+    font-size: 0.77rem;
+  }
+
+  .portrait span {
+    max-width: 6rem;
+  }
+
+  .landscape .icon {
+    margin: 1.54rem 0 0.75rem 0;
+  }
+
+  .portrait .icon {
+    height: 5.5rem;
+  }
 }
 
 
@@ -163,22 +229,12 @@ nav span {
 }
 
 .column {
-  border: 2px solid hotpink;
   width: 35%;
-  /* position: relative; */
-  /* margin-bottom: 5rem; */
-
 }
 
 .column:nth-of-type(1) {
   margin-right: 5%;
-  /* float: left; */
 }
-
-/* .column:nth-of-type(2) {
-  float: right;
-  margin-right: 25%;
-} */
 
 .column h3 {
   background-color: cadetblue;
@@ -187,6 +243,29 @@ nav span {
   margin-bottom: 1rem;
   color: white;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 470px) {
+  /* PHONE */
+  .columns {
+    display: block;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .column h3 {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  .column p {
+    font-size: 0.77rem;
+    padding: 0 0.5rem;
+    margin-bottom: 4rem;
+  }
 }
 
 
@@ -201,4 +280,15 @@ footer {
   padding: 4rem;
   position: relative;
   top: 5rem;
+}
+
+@media only screen and (max-width: 470px) {
+  /* PHONE */
+  footer {
+    top: 0;
+  }
+
+  footer .logo {
+    justify-content: center;
+  }
 }
