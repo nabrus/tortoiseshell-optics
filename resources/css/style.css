@@ -2,25 +2,17 @@
 
 html {
   font-size: 18px;
-  line-height: 1.4;
 }
 
 body {
   font-family: Helvetica, sans-serif;
-
+  line-height: 1.4;
 }
 
 .container {
   border: 2px red solid; /* delete */
   max-width: 960px;
   margin: 0 auto;
-}
-
-@media only screen and (max-width: 1024px) {
-  /* TABLET */
-  .container {
-    max-width: 100%;
-  }
 }
 
 .logo {
@@ -35,6 +27,12 @@ body {
   margin-right: 1rem;
 }
 
+@media only screen and (max-width: 1024px) {
+  /* TABLET */
+  .container {
+    max-width: 100%;
+  }
+}
 
 
 
@@ -57,7 +55,6 @@ body {
   padding: 1rem 2rem;
   margin-top: 1rem;
   color: white;
-
 }
 
 nav span {
@@ -65,19 +62,13 @@ nav span {
 }
 
 @media only screen and (max-width: 1024px){
-
-  /* .background {
-    width: 100%;
-  } */
-
+  /* TABLET */
   .company {
-    clear: both;
-    width: 100%;
-    margin: 0 auto;
+    margin: 0;
   }
 
-  nav span {
-    padding-right: 2rem;
+  .background {
+    height: 22rem;
   }
 }
 
@@ -97,8 +88,21 @@ nav span {
   margin-top: 10rem;
   padding: 1.5rem 5rem;
   font-size: 2rem;
-  line-height: 1.2;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 1024px) {
+  /* TABLET */
+  .slogan {
+    position: static;
+  }
+
+  .slogan h1 {
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+    line-height: 2.5;
+    margin: 5rem 2rem 0 0;
+  }
 }
 
 
@@ -140,6 +144,7 @@ nav span {
   border: 2px solid blue; /* delete temp */
   max-width: 5rem;
   text-align: center;
+  line-height: 1.4;
 }
 
 .icon-box.paper span {
@@ -152,29 +157,36 @@ nav span {
 
 /*  BUSINESS INFO COLUMNS  */
 
+.columns {
+  display: flex;
+  justify-content: center;
+}
+
 .column {
   border: 2px solid hotpink;
   width: 35%;
-  position: relative;
-  margin-bottom: 5rem;
+  /* position: relative; */
+  /* margin-bottom: 5rem; */
+
 }
 
 .column:nth-of-type(1) {
-  float: left;
-
+  margin-right: 5%;
+  /* float: left; */
 }
 
-.column:nth-of-type(2) {
+/* .column:nth-of-type(2) {
   float: right;
   margin-right: 25%;
-}
+} */
 
 .column h3 {
   background-color: cadetblue;
   width: 10rem;
-  padding: 0.5rem 0 0.5rem 1.25rem;
+  padding: 0.5rem 1.25rem;
   margin-bottom: 1rem;
   color: white;
+  font-weight: bold;
 }
 
 
@@ -187,4 +199,6 @@ footer {
   clear: both;
   background-color: azure;
   padding: 4rem;
+  position: relative;
+  top: 5rem;
 }
