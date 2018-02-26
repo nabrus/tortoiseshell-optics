@@ -73,12 +73,18 @@ body {
   /* TABLET */
   .company {
     margin: 0;
-    /* position: static; */
     top: 0;
   }
 
   .background {
     height: 22rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* TABLET PORTRAIT */
+  .background {
+    background-position: 30%;
   }
 }
 
@@ -215,7 +221,7 @@ body {
   }
 
   .portrait .icon {
-    height: 5.5rem;
+    height: 5.25rem;
   }
 }
 
